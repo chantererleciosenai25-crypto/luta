@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &9695900 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: fbf89d03afc7fb848af45a6cf9c83d98, type: 3}
+  m_PrefabInstance: {fileID: 1748626864}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &48343264
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,7 +343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fbf89d03afc7fb848af45a6cf9c83d98, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.19
+      value: -0.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fbf89d03afc7fb848af45a6cf9c83d98, type: 3}
       propertyPath: m_LocalPosition.z
@@ -376,10 +381,15 @@ PrefabInstance:
       propertyPath: m_Avatar
       value: 
       objectReference: {fileID: 9000000, guid: 22bbdb1f0489151418d3df31fd4ad5a2, type: 3}
+    - target: {fileID: 11400000, guid: fbf89d03afc7fb848af45a6cf9c83d98, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 2103791211}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 177074, guid: fbf89d03afc7fb848af45a6cf9c83d98, type: 3}
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 477074, guid: fbf89d03afc7fb848af45a6cf9c83d98, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 400000, guid: fbf89d03afc7fb848af45a6cf9c83d98, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2103791210}
     m_AddedComponents: []
@@ -390,7 +400,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1923022124}
+    m_TransformParent: {fileID: 9695900}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 22bbdb1f0489151418d3df31fd4ad5a2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -439,7 +449,7 @@ PrefabInstance:
     - target: {fileID: 5866666021909216657, guid: 22bbdb1f0489151418d3df31fd4ad5a2, type: 3}
       propertyPath: m_Avatar
       value: 
-      objectReference: {fileID: 9000000, guid: df7ef05fa87d48248ba181823b336391, type: 3}
+      objectReference: {fileID: 9000000, guid: 22bbdb1f0489151418d3df31fd4ad5a2, type: 3}
     - target: {fileID: 5866666021909216657, guid: 22bbdb1f0489151418d3df31fd4ad5a2, type: 3}
       propertyPath: m_Controller
       value: 
@@ -449,14 +459,14 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22bbdb1f0489151418d3df31fd4ad5a2, type: 3}
---- !u!4 &1923022124 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 477074, guid: fbf89d03afc7fb848af45a6cf9c83d98, type: 3}
-  m_PrefabInstance: {fileID: 1748626864}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2103791210 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 22bbdb1f0489151418d3df31fd4ad5a2, type: 3}
+  m_PrefabInstance: {fileID: 1813287349}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2103791211 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 22bbdb1f0489151418d3df31fd4ad5a2, type: 3}
   m_PrefabInstance: {fileID: 1813287349}
   m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
