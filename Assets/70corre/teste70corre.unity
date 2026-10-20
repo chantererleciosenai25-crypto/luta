@@ -119,6 +119,83 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &9695898 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: fbf89d03afc7fb848af45a6cf9c83d98, type: 3}
+  m_PrefabInstance: {fileID: 1748626864}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &9695900 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: fbf89d03afc7fb848af45a6cf9c83d98, type: 3}
+  m_PrefabInstance: {fileID: 1748626864}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &9695901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9695898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b61bc0aef0bbee4a9b3ec6a0d2ed221, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: "Assembly-CSharp::anima\xE7\xE3odaluta"
+  animatorLutador: {fileID: 0}
+  ataque:
+    m_Name: Ataque
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 406f0fc1-6224-4e99-853a-d9af20d01ad2
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: ed07ce83-0c9a-4934-af87-1db3a6a7de82
+      m_Path: <Mouse>/leftButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Ataque
+      m_Flags: 0
+    m_Flags: 0
+    m_Priority: 0
+  andar_Frente:
+    m_Name: Andar_Frente
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: b7491a9c-5c46-4b4c-9942-bae7eda8d752
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 63fdaefc-8f4d-488f-ab26-f02dfa261ee2
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Andar_Frente
+      m_Flags: 0
+    m_Flags: 0
+    m_Priority: 0
+  andar_tras:
+    m_Name: Andar_tras
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 625e9700-79e6-4588-bacf-bd5e54aa881b
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 424fbac0-4e77-4be1-a557-915c54b0d25c
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Andar_tras
+      m_Flags: 0
+    m_Flags: 0
+    m_Priority: 0
 --- !u!1 &48343264
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,7 +415,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fbf89d03afc7fb848af45a6cf9c83d98, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.19
+      value: -0.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fbf89d03afc7fb848af45a6cf9c83d98, type: 3}
       propertyPath: m_LocalPosition.z
@@ -376,13 +453,25 @@ PrefabInstance:
       propertyPath: m_Avatar
       value: 
       objectReference: {fileID: 9000000, guid: 22bbdb1f0489151418d3df31fd4ad5a2, type: 3}
+    - target: {fileID: 11400000, guid: fbf89d03afc7fb848af45a6cf9c83d98, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 2103791211}
+    - target: {fileID: 11400000, guid: fbf89d03afc7fb848af45a6cf9c83d98, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 177074, guid: fbf89d03afc7fb848af45a6cf9c83d98, type: 3}
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 477074, guid: fbf89d03afc7fb848af45a6cf9c83d98, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 400000, guid: fbf89d03afc7fb848af45a6cf9c83d98, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2103791210}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: fbf89d03afc7fb848af45a6cf9c83d98, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9695901}
   m_SourcePrefab: {fileID: 100100000, guid: fbf89d03afc7fb848af45a6cf9c83d98, type: 3}
 --- !u!1001 &1813287349
 PrefabInstance:
@@ -390,7 +479,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1923022124}
+    m_TransformParent: {fileID: 9695900}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 22bbdb1f0489151418d3df31fd4ad5a2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -439,7 +528,7 @@ PrefabInstance:
     - target: {fileID: 5866666021909216657, guid: 22bbdb1f0489151418d3df31fd4ad5a2, type: 3}
       propertyPath: m_Avatar
       value: 
-      objectReference: {fileID: 9000000, guid: df7ef05fa87d48248ba181823b336391, type: 3}
+      objectReference: {fileID: 9000000, guid: 22bbdb1f0489151418d3df31fd4ad5a2, type: 3}
     - target: {fileID: 5866666021909216657, guid: 22bbdb1f0489151418d3df31fd4ad5a2, type: 3}
       propertyPath: m_Controller
       value: 
@@ -449,14 +538,14 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22bbdb1f0489151418d3df31fd4ad5a2, type: 3}
---- !u!4 &1923022124 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 477074, guid: fbf89d03afc7fb848af45a6cf9c83d98, type: 3}
-  m_PrefabInstance: {fileID: 1748626864}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2103791210 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 22bbdb1f0489151418d3df31fd4ad5a2, type: 3}
+  m_PrefabInstance: {fileID: 1813287349}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2103791211 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 22bbdb1f0489151418d3df31fd4ad5a2, type: 3}
   m_PrefabInstance: {fileID: 1813287349}
   m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
