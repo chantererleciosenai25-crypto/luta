@@ -1,3 +1,4 @@
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -20,13 +21,27 @@ public class animaçãodaluta : MonoBehaviour
 
         andarparatras.Enable();
         andarparatras.performed += Aocontrario;
+
+        andarparafrente.canceled += Parar;
+        andarparatras.canceled += PararT;
+    }
+
+    private void PararT(InputAction.CallbackContext context)
+    {
+        animatorlutador.SetBool("Walk Backward", false);
+    }
+
+    private void Parar(InputAction.CallbackContext context)
+    {
+        animatorlutador.SetBool("Walk Forward", false);
     }
 
     private void OnDestroy()
     { 
         ataque.performed -= Atacar;
-        andarparafrente.performed -= Andando;
-        andarparatras.performed -= Aocontrario;
+        andarparafrente.canceled -= Andando;
+
+        andarparatras.canceled -= Aocontrario;
     }
     
     public void Atacar(InputAction.CallbackContext context)
@@ -37,14 +52,14 @@ public class animaçãodaluta : MonoBehaviour
 
     public void Andando(InputAction.CallbackContext context)
     {
-        animatorlutador.SetTrigger("Walk Forward");
+        animatorlutador.SetBool("Walk Forward", true);
         Debug.Log("Andando");
        
     }
 
     public void Aocontrario(InputAction.CallbackContext context)
     {
-        animatorlutador.SetTrigger("Walk Backward");
+        animatorlutador.SetBool("Walk Backward",true);
         Debug.Log("Aocontrario");
     }
 }
