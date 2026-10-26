@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b61bc0aef0bbee4a9b3ec6a0d2ed221, type: 3}
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::anima\xE7\xE3odaluta"
-  animatorLutador: {fileID: 0}
+  animatorLutador: {fileID: 2103791211}
   ataque:
     m_Name: Ataque
     m_Type: 0
@@ -415,7 +415,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fbf89d03afc7fb848af45a6cf9c83d98, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.7
+      value: 0.17
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fbf89d03afc7fb848af45a6cf9c83d98, type: 3}
       propertyPath: m_LocalPosition.z
