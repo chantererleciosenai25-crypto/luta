@@ -22,7 +22,7 @@ public class animaçãodaluta : MonoBehaviour
         andarparatras.Enable();
         andarparatras.performed += Aocontrario;
 
-        andarparafrente.canceled += Parar;
+        andarparafrentes.canceled += Parar;
         andarparatras.canceled += PararT;
     }
 
