@@ -538,6 +538,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 8f2f5123e7b753b44ad9b59d61095cb5, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 22bbdb1f0489151418d3df31fd4ad5a2, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are already bound by a Humanoid avatar. These transforms can only be changed by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform 'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform 'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform 'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tand more ...\n\tFrom animation clip 'parado dan\xE7ando'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -548,6 +552,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 22bbdb1f0489151418d3df31fd4ad5a2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2103791212}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 22bbdb1f0489151418d3df31fd4ad5a2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2103791213}
   m_SourcePrefab: {fileID: 100100000, guid: 22bbdb1f0489151418d3df31fd4ad5a2, type: 3}
 --- !u!4 &2103791210 stripped
 Transform:
@@ -656,6 +663,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2103791213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303758655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f797762fb564aa4498bbe81587c35474, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayAudioC
+  wooshSource: {fileID: 2103791212}
+  wooshSoco1: {fileID: 8300000, guid: 0476b5c99b5489249af090a19face9b4, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

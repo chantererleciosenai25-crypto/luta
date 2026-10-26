@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayAudio : MonoBehaviour
+public class PlayAudioC : MonoBehaviour
 {
     [SerializeField] AudioSource wooshSource;
     [SerializeField] AudioClip wooshSoco1;
