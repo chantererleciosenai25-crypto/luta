@@ -5,8 +5,10 @@ public class PlayAudioC : MonoBehaviour
     [SerializeField] AudioSource wooshSource;
     [SerializeField] AudioSource GruntSource;
     [SerializeField] AudioSource Footstep;
+    
     [SerializeField] AudioClip wooshSoco1;
     [SerializeField] AudioClip FootPasso;
+
     [SerializeField] AudioClip Gruntra;
 
     public void PlayWoosh()
@@ -18,7 +20,7 @@ public class PlayAudioC : MonoBehaviour
     }
 
     public void PlayRa()
-   {
+    {
         Debug.Log("RA");
 
         GruntSource.clip = Gruntra;
@@ -30,7 +32,9 @@ public class PlayAudioC : MonoBehaviour
     {
         Debug.Log("Play footstep");
 
-        Footstep.clip = FootPasso;
+        Footstep.clip = FootPasso;    
         Footstep.Play();
     }
 }
+  
+

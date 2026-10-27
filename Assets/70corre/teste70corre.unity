@@ -170,7 +170,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: 63fdaefc-8f4d-488f-ab26-f02dfa261ee2
-      m_Path: <Keyboard>/w
+      m_Path: <Keyboard>/d
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -188,7 +188,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: 424fbac0-4e77-4be1-a557-915c54b0d25c
-      m_Path: <Keyboard>/s
+      m_Path: <Keyboard>/#(A)
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -2689,7 +2689,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fbf89d03afc7fb848af45a6cf9c83d98, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.44
+      value: 0.39
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fbf89d03afc7fb848af45a6cf9c83d98, type: 3}
       propertyPath: m_LocalRotation.w
