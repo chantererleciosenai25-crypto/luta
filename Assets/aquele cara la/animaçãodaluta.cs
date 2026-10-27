@@ -7,10 +7,9 @@ public class animaçãodaluta : MonoBehaviour
 {
     [SerializeField] private Animator animatorlutador;
     [SerializeField] private InputAction ataque;
-    [SerializeField] private InputAction  andarparafrente;
-
+    [SerializeField] private InputAction andarparafrente;
     [SerializeField] private InputAction andarparatras;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         ataque.Enable();
@@ -18,32 +17,27 @@ public class animaçãodaluta : MonoBehaviour
 
         andarparafrente.Enable();
         andarparafrente.performed += Andando;
+        andarparafrente.canceled += Parar;
 
         andarparatras.Enable();
         andarparatras.performed += Aocontrario;
-
-        andarparafrentes.canceled += Parar;
         andarparatras.canceled += PararT;
     }
 
-    private void PararT(InputAction.CallbackContext context)
-    {
-        animatorlutador.SetBool("Walk Backward", false);
-    }
-
-    private void Parar(InputAction.CallbackContext context)
-    {
-        animatorlutador.SetBool("Walk Forward", false);
-    }
-
     private void OnDestroy()
-    { 
+    {
         ataque.performed -= Atacar;
-        andarparafrente.canceled -= Andando;
+        ataque.Disable();
 
-        andarparatras.canceled -= Aocontrario;
+        andarparafrente.performed -= Andando;
+        andarparafrente.canceled -= Parar;
+        andarparafrente.Disable();
+
+        andarparatras.performed -= Aocontrario;
+        andarparatras.canceled -= PararT;
+        andarparatras.Disable();
     }
-    
+
     public void Atacar(InputAction.CallbackContext context)
     {
         animatorlutador.SetTrigger("PunchTrigger");
@@ -54,12 +48,21 @@ public class animaçãodaluta : MonoBehaviour
     {
         animatorlutador.SetBool("Walk Forward", true);
         Debug.Log("Andando");
-       
+    }
+
+    private void Parar(InputAction.CallbackContext context)
+    {
+        animatorlutador.SetBool("Walk Forward", false);
     }
 
     public void Aocontrario(InputAction.CallbackContext context)
     {
-        animatorlutador.SetBool("Walk Backward",true);
+        animatorlutador.SetBool("Walk Backward", true);
         Debug.Log("Aocontrario");
+    }
+
+    private void PararT(InputAction.CallbackContext context)
+    {
+        animatorlutador.SetBool("Walk Backward", false);
     }
 }
