@@ -459,7 +459,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: 79803433-c2ad-4e73-b68e-2f437145084f
-      m_Path: <Keyboard>/w
+      m_Path: <Mouse>/leftButton
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -630,7 +630,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 19b1f2a786a558340a3a45a11572db67, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
