@@ -3610,7 +3610,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayAudioC
   wooshSource: {fileID: 2103791212}
+  GruntSource: {fileID: 2103791212}
+  Footstep: {fileID: 2103791212}
   wooshSoco1: {fileID: 8300000, guid: 0476b5c99b5489249af090a19face9b4, type: 3}
+  FootPasso: {fileID: 8300000, guid: db870e7b42bf34c41aaae832fe813001, type: 3}
+  Gruntra: {fileID: 8300000, guid: b05cbe0b0dbd59543bccb4587d2b1c95, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
