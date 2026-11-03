@@ -235,13 +235,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 133866468}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10.678}
+  m_LocalRotation: {x: -0, y: 0.74723643, z: -0, w: 0.6645583}
+  m_LocalPosition: {x: -2.773357, y: 1, z: -6.1808605}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 96.703, z: 0}
 --- !u!1 &159506642 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e132f3bc5d927784484f0d9286f42bdd, type: 3}
@@ -777,8 +777,9 @@ MonoBehaviour:
   GruntSource: {fileID: 0}
   Footstep: {fileID: 0}
   wooshSoco1: {fileID: 8300000, guid: 19b1f2a786a558340a3a45a11572db67, type: 3}
-  FootPasso: {fileID: 8300000, guid: 5ad60a82cd72b254cb62ec4e7befae5b, type: 3}
-  Gruntra: {fileID: 8300000, guid: 80e30b7fbf8ec394c8eec4a10c3a45ff, type: 3}
+  Gruntra:
+  - {fileID: 8300000, guid: 80e30b7fbf8ec394c8eec4a10c3a45ff, type: 3}
+  FootPasso: []
 --- !u!1001 &1881899708
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -889,8 +890,10 @@ MonoBehaviour:
   GruntSource: {fileID: 1441084689}
   Footstep: {fileID: 1599718352}
   wooshSoco1: {fileID: 8300000, guid: 19b1f2a786a558340a3a45a11572db67, type: 3}
-  FootPasso: {fileID: 8300000, guid: 2201223d0c3d98a4aa710cda9ab34c6b, type: 3}
-  Gruntra: {fileID: 8300000, guid: 80e30b7fbf8ec394c8eec4a10c3a45ff, type: 3}
+  Gruntra:
+  - {fileID: 8300000, guid: 80e30b7fbf8ec394c8eec4a10c3a45ff, type: 3}
+  - {fileID: 8300000, guid: b05cbe0b0dbd59543bccb4587d2b1c95, type: 3}
+  FootPasso: []
 --- !u!82 &1881899712
 AudioSource:
   m_ObjectHideFlags: 0
