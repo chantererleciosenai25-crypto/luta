@@ -4009,8 +4009,15 @@ MonoBehaviour:
   GruntSource: {fileID: 1331187932}
   Footstep: {fileID: 383768598}
   wooshSoco1: {fileID: 8300000, guid: 0476b5c99b5489249af090a19face9b4, type: 3}
-  FootPasso: {fileID: 8300000, guid: 1fecea306f7e06b40b57a6bd65d2487f, type: 3}
-  Gruntra: {fileID: 8300000, guid: b05cbe0b0dbd59543bccb4587d2b1c95, type: 3}
+  Gruntra:
+  - {fileID: 8300000, guid: 45229683e47068e4ea0b85a075051588, type: 3}
+  - {fileID: 8300000, guid: 32cf2f88bd848b849be0bfbf7d840ce3, type: 3}
+  - {fileID: 8300000, guid: b05cbe0b0dbd59543bccb4587d2b1c95, type: 3}
+  FootPasso:
+  - {fileID: 8300000, guid: 53fc64ba926031140a94268f925b3c6d, type: 3}
+  - {fileID: 8300000, guid: a67715f73f72b164eba6f2c4f59cfee5, type: 3}
+  - {fileID: 8300000, guid: 74a28eeada6e48d42988f20b6f95b0ba, type: 3}
+  - {fileID: 8300000, guid: 387f86e66f8380e429965f9a18bb1744, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
