@@ -893,7 +893,10 @@ MonoBehaviour:
   Gruntra:
   - {fileID: 8300000, guid: 80e30b7fbf8ec394c8eec4a10c3a45ff, type: 3}
   - {fileID: 8300000, guid: b05cbe0b0dbd59543bccb4587d2b1c95, type: 3}
-  FootPasso: []
+  FootPasso:
+  - {fileID: 8300000, guid: fed97abe594138846b76967a2205680c, type: 3}
+  - {fileID: 8300000, guid: 54b9b74c6b0f18245844af77e67c69f4, type: 3}
+  - {fileID: 8300000, guid: fed97abe594138846b76967a2205680c, type: 3}
 --- !u!82 &1881899712
 AudioSource:
   m_ObjectHideFlags: 0
