@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using System.Collections;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class HP : MonoBehaviour
 {
     [SerializeField] private float maxHp = 100f;
     [SerializeField] private InputAction debugDano;
